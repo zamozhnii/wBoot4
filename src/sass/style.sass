@@ -1,0 +1,225 @@
+@font-face
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+
+@font-face
+    font-family: 'PlayfairItalic';
+    src: url('../fonts/PlayfairDisplay-BlackItalic.otf');
+    
+html,body 
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    font-family: 'RobotoRegular';
+    font-size: 10px;
+
+// SIDEBAR
+
+.navbar-left 
+    position: relative;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 26.3em;
+    min-height: 100%;
+    box-shadow: 16px 0px 40px rgba(0,0,0,1);
+
+    .btn-sidebar 
+        padding: 0;
+        border: none;
+        width: 26.3em;
+        position: relative;
+        z-index: 11;
+        box-shadow: 0px 8px 43px rgba(0,0,0,1)
+
+        .image-item 
+            display: block;
+            width: 100%;
+
+    .wrap-nav.wrap-left 
+        left: -300px;
+
+    .wrap-nav
+        position: relative;
+        left: 0;
+        background: #dcb385;
+        padding: 35px 0 88px;
+        z-index: 4;
+        transition: all .3s ease-in-out;
+        min-height: 100vh;
+
+        .lines-wrap
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            .line 
+                width: 1px;
+                height: 100%;
+                background: rgba(rgb(0, 0, 0), 0.2);
+                z-index: 3;
+        
+        .navigation
+            border: 1px solid #ad9184;
+            border-radius: 10px;
+            background: #edcaa3;
+            max-width: 20em;
+            margin: 0 auto;
+            font-family: 'RobotoRegular';
+            padding: 20px 0 12px;
+            position: relative;
+            z-index: 5;
+
+            &__item
+                font-size: 2.2em;
+                
+                a 
+                    color: #30292b;
+                    text-decoration: none;
+                    transition: .2s color ease-in-out;
+
+                a:hover,
+                a:focus
+                    color: #e2383f;
+
+                .active
+                    color: #e2383f;
+
+            &__img
+                width: 5em;
+                margin: 14px auto 0;
+
+                img
+                    display: block;
+                    width: 100%;
+
+        .social-nav
+            width: 9.7em;
+            margin: 26px auto 0;
+            position: relative;
+            z-index: 5;
+
+            &__item
+                background: rgba(rgb(254, 182, 39), 0.49);
+                border-radius: 50%;
+                width: 2.6em;
+                height: 2.6em;
+                transition: background .2s ease-in;
+
+                a 
+                    color: #ffffff;
+                    font-size: 1.4em;
+
+            &__item:hover
+                background: rgba(rgb(254, 182, 39), 0.89);
+
+            .active-social
+                background: rgba(rgb(254, 182, 39), 0.89);
+
+
+
+
+// CONTENT
+
+
+.content 
+    flex: 1 0;
+    background: url('../img/bnd.jpg');
+    background-size: cover;
+    min-height: 100vh;
+
+    .title-wrap
+        max-width: 100%;
+        margin: 0 5%;
+
+        .title
+            margin-top: 4em;
+
+            &__item
+                text-transform: uppercase;
+                color: #FFF;
+                font-size: 6em;
+                line-height: 1em;
+                letter-spacing: 0.6em;
+
+            &__descr
+                color: #fdb827;
+                text-transform: uppercase;
+                font-size: 2.3em;
+                letter-spacing: 0.55em;
+
+        .wrap-search 
+            margin-top: 24px;
+         
+            .btn-search
+                border: none;
+                width: 2.6em;
+                height: 2.6em;
+                border-radius: 50%;
+                background: #fdb827;
+                color: #FFF;
+                font-size: 2em;
+
+            .search-input
+                width: 0;
+                margin-right: -34px;
+                border-radius: 10px;
+                height: 2.6em;
+                font-size: 1.4em;
+                padding: 1.5em 0.8em;
+                outline: none;
+                transition: all .3s ease-in-out;
+
+            .search-input-visib
+                width: 15em;
+
+    .quality-wrap
+        font-family: 'PlayfairItalic';
+        max-width: 750px;
+        margin: 70px 18% 0 auto;
+        color: #dbc950;
+        text-transform: capitalize;
+
+        &__item
+            font-size: 15.5em;
+
+            small 
+                font-size: 0.3em;
+                margin-left: 0.84em;
+
+        &__tob
+            font-size: 9em;
+            margin-top: -30px;
+
+    .wrap-descr
+        font-family: 'RobotoRegular';
+        color: #ffffff;
+        background: rgba(rgb(5, 5, 5), 0.57%);
+        max-width: 15.5em;
+        border: 2px solid rgba(rgb(255, 255, 255), 0.28%);
+        border-left: none;
+        margin-right: 12%;
+        font-size: 1.8em;
+        padding: 266px 55px 33px 48px;
+        margin-top: -260px;
+        position: relative;
+
+    .wrap-descr::after,
+    .wrap-descr::before 
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 25px;
+        color: #fff;
+        left: 0;
+        top: 0;
+        border-left: 2px solid rgba(rgb(255, 255, 255), 0.28%);
+
+    .wrap-descr::before 
+        top: 248px;
+        border-left: 2px solid rgba(rgb(255, 255, 255), 0.28%);
+        height: 180px;
